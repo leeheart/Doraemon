@@ -37,7 +37,10 @@ const player = {
     }
     player.n += 1
   },
-  play: ()=>{player.id = setInterval(player.run, player.time)},
+  play: ()=>{
+    window.clearInterval(player.id)
+    player.id = setInterval(player.run, player.time)
+  },
   pause: ()=>{clearInterval(player.id)},
   slow: ()=>{
     player.pause()

@@ -1,0 +1,31 @@
+/* CSS reset */
+*{box-sizing: border-box;}
+*::before, *::after{box-sizing: border-box;}
+*{margin: 0;padding: 0;}
+
+/* style */
+#text{
+  height: 30vh;
+  overflow: auto;
+}
+#text::-webkit-scrollbar{
+  display: none;
+}
+#buttons{
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+#buttons>button{
+  margin-top: 10px;
+  padding: 5px;
+}
+#doraemon{
+  height: 70vh;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

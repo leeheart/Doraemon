@@ -1,8 +1,21 @@
-const string = `.doraemon{
+const string = `
+/* 
+ * 本项目使用 CSS 来画一个蓝胖子（哆啦A梦）
+ * 下面开始开始绘画
+ * 
+ * 首先准备一张蓝皮肤
+ * 
+*/
+.doraemon{
   background: #93B8CA;
   min-height: 70vh;
   position: relative;
 }
+/* 
+ *
+ * 然后画出蓝胖子的圆脑袋
+ * 
+*/
 .doraemon .head{
   border: 2px solid black;
   background: #1E90FF;
@@ -14,6 +27,13 @@ const string = `.doraemon{
   margin-left: -210px;
   border-radius: 200px / 190px;
 }
+
+/*
+ *
+ * 白脸蛋
+ *
+*/
+
 .doraemon .head .face{
   border: 2px solid #000;
   background: #fff;
@@ -25,6 +45,11 @@ const string = `.doraemon{
   margin-left: -180px;
   border-radius: 170px / 140px;
 }
+/* 
+ *
+ * 接下来是它的两只眼睛
+ * 
+*/
 .doraemon .head .face .eye{
   border: 2px solid #000;
   background: #fff;
@@ -58,6 +83,13 @@ const string = `.doraemon{
 .doraemon .head .face .eye.right{
   transform: translateX(45px);
 }
+
+/*
+ *
+ * 按上一个红鼻子
+ *
+*/
+
 .doraemon .head .face .nose{
   border: 2px solid #000;
   background: #FF0000;
@@ -69,6 +101,13 @@ const string = `.doraemon{
   margin-left: -25px;
   border-radius: 50%;
 }
+
+/*
+ *
+ * 红鼻子自带反光效果
+ * 
+*/
+
 .doraemon .head .face .nose::before{
   content: '';
   display: block;
@@ -89,6 +128,12 @@ const string = `.doraemon{
   left: 50%;
   top: 96px;
 }
+
+/*
+ * 接下来是它的嘴巴
+ *
+*/
+
 .doraemon .head .face .mouth{
   border: 2px solid #000;
   border-top: none;
@@ -102,6 +147,12 @@ const string = `.doraemon{
   margin-left: -130px;
   border-radius: 125px / 100px;
 }
+
+/*
+ * 脸的两边各插3根胡子
+ *
+*/
+
 .doraemon .head .face .beard{
   width: 180px;
   height: 180px;
@@ -132,6 +183,12 @@ const string = `.doraemon{
   transform: rotate(-20deg);
   top: 70%;
 }
+
+/*
+ * 戴上一个项圈
+ *
+*/
+
 .doraemon .collar{
   border: 2px solid #000;
   background: #FF0000;
@@ -143,6 +200,12 @@ const string = `.doraemon{
   margin-left: -160px;
   border-radius: 25px;
 }
+
+/*
+ * 再挂个铃铛
+ *
+*/
+
 .doraemon .bell{
   border: 2px solid #000;
   background: #FFFF00;
@@ -180,6 +243,14 @@ const string = `.doraemon{
   left: 50%;
   top: 38px;
   margin-left: -1px;
-}`
+}
+
+/*
+ *
+ * 你好大雄，我叫哆啦A梦，请多关照！
+ *
+*/
+
+`
 
 export default string
